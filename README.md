@@ -1,7 +1,7 @@
-A simple react players Scoreboard with stopwatch. Ideal for timed games like Chess, Go, Checkers, etc..
+A simple players Scoreboard with stopwatch created with React. Ideal for timed games like Chess, Go, Checkers, etc..
 
-##Functionalities 
+#Functionalities 
 - Add new players 
 - Track user's individual and total player scores
-- Avility to start, stop and reset timer
+- Availity to start, stop and reset timer
 
