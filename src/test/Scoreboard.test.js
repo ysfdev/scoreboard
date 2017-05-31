@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Scoreboard from '../Scoreboard';
+import Scoreboard from '../containers/Scoreboard';
 
 //TODO Finish other tests
 it('renders without crashing', () => {

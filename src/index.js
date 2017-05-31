@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Application from './App';
+import Scoreboard from './containers/Scoreboard';
 import './index.css';
 
 //Default Initial players
@@ -20,6 +20,6 @@ const PLAYERS = [
 ];
 
 ReactDOM.render(
-  <Application initialPlayers={PLAYERS}/>,
+  <Scoreboard initialPlayers={PLAYERS}/>,
   document.getElementById('root')
 );
