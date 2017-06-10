@@ -1,25 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import PlayerReducer from './reducers/player';
 import Scoreboard from './containers/Scoreboard';
 import './index.css';
 
-//Default Initial players
-const PLAYERS = [
-  {
-    name: "Mark Tree",
-    score: 23
-  },
-  {
-    name: "Jeremy Collins",
-    score: 34
-  },
-  {
-    name: "Ellen Marie",
-    score: 42
-  },
-];
+const store = createStore(
+  PlayerReducer,
+  window.devToolsExtension && window.devToolsExtension()
+)
 
 ReactDOM.render(
-  <Scoreboard initialPlayers={PLAYERS}/>,
+  <Provider store={store}>
+   <Scoreboard/>
+  </Provider>,
   document.getElementById('root')
 );
